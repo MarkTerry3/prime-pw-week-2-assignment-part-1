@@ -3,7 +3,7 @@
 let firstName = 'Mark ';
 
 // 2 - Create a second variable called `lastName` and assign it the value of your last name
-let lastName = 'Terry'; 
+let lastName = 'Terry';
 
 // 3 - Create a third variable called `fullName`, assign it the value of your first and last name
 // (remember, you already have variables for this, can you use those?)
@@ -72,7 +72,47 @@ if (pets > allowedPets) {
 // assigns the highest value to `mostPets`. There's several possibilities --
 // be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
+{
+let mostPetss;
 
+if (pets>friendsPets) {
+    let mostPets=pets;
+    console.log('Most Pets', mostPets);
+    if (friendsPets>pets) {
+      let mostPets=friendsPets;
+      console.log('Most Pets', mostPets);
+    }
+}
+}
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
 
+{
+  let mostPets = 3;
+
+switch (true) {
+  case (pets>friendsPets):
+    console.log('pets', mostPets);
+    break;
+  case (friendsPets>pets):
+    console.log('friendsPets', mostPets);
+    break;
+  default:console.log('My code isnt doing what I want it to do!!');
+    break;
+}
+}
+
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
+
+let mostPets = 3
+console.log((pets>=mostPets) ?  'pets' : 'friendsPets' );
+
+
+
+
+
+
+
+
+
+
+/////
